@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AXIS WEAR</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <!-- LOGO -->
+    <a href="index.html" class="logo">AXIS WEAR</a>
+
+    <!-- MENÚ -->
+<nav class="nav">
+
+    <div class="dropdown"> <!--esto hace que este sea elque contiene-->
+        <a href="#">Tienda</a>
+
+        <div class="dropdown-menu"> <!--Aqui esto es el contenido dentro-->
+            <a href="polos.html">Polos</a>
+            <a href="pantalones.html">Pantalones</a>
+            <a href="zapatillas.html">Zapatillas</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Nuevo</a>
+
+        <div class="dropdown-menu">
+            <a href="#">Últimos productos</a>
+            <a href="#">Tendencias</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Colección</a>
+
+        <div class="dropdown-menu">
+            <a href="#">Verano</a>
+            <a href="#">Invierno</a>
+        </div>
+    </div>
+
+
+    <div class="dropdown">
+        <a href="#">Acerca</a>
+
+        <div class="dropdown-menu">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="#">Contacto</a>
+        </div>
+    </div>
+
+</nav>
+
+    <!-- acccion de barrita -->
+    <div class="actions">
+
+        <!-- buscar -->
+        <div class="search-box">
+                <input type="text" id="inputSearch" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+            </div>
+        
+            <ul id="box-search">
+                 <li><a href="index.html"><i class="fas fa-search"></i>Inicio</a></li>
+                 <li><a href="polos.html"><i class="fas fa-search"></i>Polos</a></li>
+                 <li><a href="pantalones.html"><i class="fas fa-search"></i>Pantalones</a></li>
+                 <li><a href="zapatillas.html"><i class="fas fa-search"></i>Zapatillas</a></li>
+                 <li><a href="nosotros.html"><i class="fas fa-search"></i>Nosotros</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Últimos productos</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Tendencias</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Colección Verano</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Colección Invierno</a></li>
+            </ul>
+
+        <!-- Y aqui los iconos -->
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+</header>
+
+<!--Imagenes-->
+<section class="hero">
+
+    <!-- imagencilla1 -->
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1520975916090-3105956dac38');">
+        <div class="overlay">
+            <h1 class="hero-title">ESTILO URBANO QUE DEFINE TU IDENTIDAD</h1>
+            <p>Prendas diseñadas para quienes viven la moda todos los días.</p>
+            <div class="buttons">
+                <button class="btn primary">Comprar ahora</button>
+                <button class="btn secondary">Ver colección</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Imagen2 -->
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1516826957135-700dedea698c');">
+        <div class="overlay">
+            <h1 class="hero-title">NUEVA COLECCIÓN 2026</h1>
+            <p>Descubre lo último en moda urbana.</p>
+            <div class="buttons">
+                <button class="btn primary">Comprar ahora</button>
+                <button class="btn secondary">Ver colección</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- imagen 3 -->
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d');">
+        <div class="overlay">
+            <h1 class="hero-title">EXPRESA TU ESTILO</h1>
+            <p>Ropa que habla por ti.</p>
+            <div class="buttons">
+                <button class="btn primary">Comprar ahora</button>
+                <button class="btn secondary">Ver colección</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOTS -->
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+</section>
+<!-- JS -->
+<script>
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            slides.forEach(s => s.classList.remove("active"));
+            dots.forEach(d => d.classList.remove("active"));
+
+            slides[index].classList.add("active");
+            dots[index].classList.add("active");
+        });
+    });
+
+    let current = 0;
+    setInterval(() => {
+        slides[current].classList.remove("active");
+        dots[current].classList.remove("active");
+
+        current = (current + 1) % slides.length;
+
+        slides[current].classList.add("active");
+        dots[current].classList.add("active");
+    }, 4000);
+</script>
+<script src="main.js"></script>
+
+<!-- CATEGORÍAS -->
+<section class="categorias">
+    <h2>CATEGORÍAS</h2>
+    <div class="cat-container">
+        <div class="cat-card">
+    <div class="cat-inner">
+        <!-- por el frente -->
+        <div class="cat-front">
+            <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="">
+            <div class="cat-info">
+                <h3>Hombre</h3>
+                <a href="#">Ver más →</a>
+            </div>
+        </div>
+
+        <!-- modificadion de parte tarcera -->
+        <div class="cat-back">
+            <h3>MODA HOMBRE</h3>
+            <p> Descubre hoodies, polos,
+                pantalones y accesorios urbanos</p>
+            <button>Explorar</button>
+        </div>
+    </div>
+
+</div>
+        <div class="cat-card">
+
+    <div class="cat-inner">
+
+        <!-- frenteeee -->
+        <div class="cat-front">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="">
+            <div class="cat-info">
+                <h3>Mujer</h3>
+                <a href="#">Ver más →</a>
+            </div>
+        </div>
+
+        <!-- atra -->
+        <div class="cat-back">
+            <h3>MODA MUJER</h3>
+            <p>Tops, hoodies, outfits y
+                prendas modernas para destacar.</p>
+            <button>Explorar</button>
+        </div>
+    </div>
+
+</div>
+        <div class="cat-card">
+
+    <div class="cat-inner">
+
+        <!-- frente -->
+        <div class="cat-front">
+            <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c" alt="">
+            <div class="cat-info">
+                <h3>Accesorios</h3>
+                <a href="#">Ver más →</a>
+            </div>
+        </div>
+
+        <!-- atra -->
+        <div class="cat-back">
+            <h3>ACCESORIOS</h3>
+            <p>Gorras, cadenas, bolsos y complementos urbanos exclusivos.</p>
+            <button>Explorar</button>
+        </div>
+    </div>
+
+</div>
+
+    </div>
+</section>
+<section class="destacados">
+    <h2>DESTACADOS</h2>
+
+    <div class="prod-container">
+
+        <div class="prod-card">
+            <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="">
+            <h3>Hoodie Oversize</h3>
+            <p>S/ 120.00</p>
+        </div>
+
+        <div class="prod-card">
+            <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c" alt="">
+            <h3>Polo Street</h3>
+            <p>S/ 60.00</p>
+        </div>
+
+        <div class="prod-card">
+            <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c" alt="">
+            <h3>Tee Graphic</h3>
+            <p>S/ 70.00</p>
+        </div>
+
+        <div class="prod-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="">
+            <h3>Hoodie Crop</h3>
+            <p>S/ 110.00</p>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Marca -->
+        <div class="footer-col">
+            <h2>AXIS WEAR</h2>
+            <p>Moda urbana para quienes viven su estilo todos los días.</p>
+            <div class="socials">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                 </a>
+                 
+                 <a href="https://tiktok.com" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                
+                <a href="https://facebook.com" target="_blank">
+                     <i class="fa-brands fa-facebook"></i>
+                    </a>
+            </div>
+        </div>
+
+        <!-- Enlaces -->
+        <div class="footer-col">
+            <h3>ENLACES</h3>
+            <a href="index.html">Inicio</a>
+            <a href="#">Tienda</a>
+            <a href="#">Colección</a>
+            <a href="#">Acerca</a>
+            <a href="#">Contacto</a>
+        </div>
+
+        <!-- Aqui es lo de ayuda -->
+        <div class="footer-col">
+            <h3>AYUDA</h3>
+            <a href="#">Envíos</a>
+            <a href="#">Cambios y devoluciones</a>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+
+        <!-- Contacto -->
+        <div class="footer-col">
+            <h3>CONTACTO</h3>
+            <p>AxisWear15@gmail.com</p>
+            <p>+51 910 920 563</p>
+            <p>Lima, Perú, Los Olivos</p>
+        </div>
+
+        <!-- Suscripción -->
+        <div class="footer-col">
+            <h3>SUSCRÍBETE</h3>
+            <p>Recibe nuestras novedades y promociones exclusivas.</p>
+
+            <div class="subscribe">
+                <input type="email" placeholder="Tu email">
+                <button>→</button>
+            </div>
+        </div>
+        <!-- burbujitas jsjs -->
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+
+    </div>
+
+</footer>
+</body>
+</html>

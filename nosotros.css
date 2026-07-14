@@ -1,0 +1,45 @@
+.about-hero{
+    height: 70vh;
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+
+    url('https://images.unsplash.com/photo-1483985988355-763728e1935b');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.about-overlay h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.about-overlay p{
+    font-size: 20px;
+    max-width: 700px;
+}
+.hero-title .char{
+    display: inline-block;
+}
+.about-content-page{
+    padding: 80px 40px;
+    text-align: center;
+}
+.about-text{
+    max-width: 800px;
+    margin: auto;
+}
+.about-text h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.about-text p{
+    font-size: 18px;
+    line-height: 1.8;
+}

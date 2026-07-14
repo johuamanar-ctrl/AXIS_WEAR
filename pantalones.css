@@ -1,0 +1,204 @@
+/* ==========================================================================
+   CSS PARA EL CATÁLOGO DE PANTALONES - AXIS WEAR
+   ========================================================================== */
+
+.catalog-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #ffffff;
+}
+
+.grid-productos-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 35px 25px;
+}
+
+.prod-card-col {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.prod-card-col:hover {
+    transform: translateY(-5px);
+}
+
+/* Altura ideal para prendas largas como pantalones */
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 390px; 
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.prod-card-col:hover .img-wrapper img {
+    transform: scale(1.05);
+}
+
+.badge-descuento {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #e60000;
+    color: #ffffff;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.icon-corazon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #111111;
+    background: rgba(255, 255, 255, 0.9);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.prod-info-detalle {
+    padding: 15px 0 10px 0;
+}
+
+.cat-tag {
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #888888;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.prod-info-detalle h3 {
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #111111;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+    height: 40px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.precio-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.precio {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111111;
+}
+
+.precio-antes {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.detalles-fijos {
+    margin-top: auto;
+}
+
+.tallas-contenedor {
+    margin-bottom: 12px;
+}
+
+.txt-talla {
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #666666;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.selector-tallas {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.selector-tallas span {
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    border: 1px solid #dddddd;
+    color: #333333;
+    padding: 0 8px;
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.selector-tallas span.activa {
+    background-color: #111111;
+    color: #ffffff;
+    border-color: #111111;
+    font-weight: bold;
+}
+
+.btn-agregar-carrito {
+    width: 100%;
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #111111;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-agregar-carrito:hover {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+    .grid-productos-catalogo {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 20px 12px;
+    }
+    .img-wrapper {
+        height: 250px;
+    }
+    .prod-info-detalle h3 {
+        font-size: 0.85rem;
+        height: 36px;
+    }
+}

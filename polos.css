@@ -1,0 +1,239 @@
+/* ==========================================================================
+   CSS PARA EL CATÁLOGO DE POLOS - AXIS WEAR
+   ========================================================================== */
+
+/* Contenedor Principal del Catálogo */
+.catalog-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #ffffff;
+}
+
+/* Sistema de Rejilla (Grid) para los Productos */
+.grid-productos-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 35px 25px; /* Espaciado entre tarjetas */
+}
+
+/* Tarjeta de Producto */
+.prod-card-col {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.prod-card-col:hover {
+    transform: translateY(-5px);
+}
+
+/* Contenedor de la Imagen (Optimizado para siluetas de ropa) */
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 380px; /* Altura vertical ideal para polos y hoodies */
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la proporción de la prenda sin deformar */
+    transition: transform 0.5s ease;
+}
+
+.prod-card-col:hover .img-wrapper img {
+    transform: scale(1.05); /* Zoom suave al pasar el cursor */
+}
+
+/* Insignia de Descuento (Badge) */
+.badge-descuento {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #e60000; /* Rojo llamativo de ofertas */
+    color: #ffffff;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 2;
+}
+
+/* Icono de Favorito (Corazón) */
+.icon-corazon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #111111;
+    background: rgba(255, 255, 255, 0.9);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.icon-corazon:hover {
+    background: #111111;
+    color: #ffffff;
+}
+
+/* Información del Producto (Textos) */
+.prod-info-detalle {
+    padding: 15px 0 10px 0;
+}
+
+.cat-tag {
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #888888;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.prod-info-detalle h3 {
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #111111;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+    height: 40px; /* Caja fija para evitar desalineación entre tarjetas */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Contenedor de Precios */
+.precio-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.precio {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111111;
+}
+
+.precio-antes {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+/* Contenedor de Tallas e Interacción */
+.detalles-fijos {
+    margin-top: auto; /* Empuja los botones de compra siempre al fondo */
+}
+
+.tallas-contenedor {
+    margin-bottom: 12px;
+}
+
+.txt-talla {
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #666666;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.selector-tallas {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.selector-tallas span {
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    border: 1px solid #dddddd;
+    color: #333333;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.selector-tallas span:hover {
+    border-color: #111111;
+    background-color: #f9f9f9;
+}
+
+/* Talla activa */
+.selector-tallas span.activa {
+    background-color: #111111;
+    color: #ffffff;
+    border-color: #111111;
+    font-weight: bold;
+}
+
+/* Botón Añadir al Carrito */
+.btn-agregar-carrito {
+    width: 100%;
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #111111;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+
+.btn-agregar-carrito:hover {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* Responsivo para pantallas móviles (Celulares) */
+@media (max-width: 600px) {
+    .grid-productos-catalogo {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 20px 12px;
+    }
+
+    .img-wrapper {
+        height: 240px; /* Ajuste proporcional del polo para que no ocupe toda la pantalla del cel */
+    }
+
+    .prod-info-detalle h3 {
+        font-size: 0.85rem;
+        height: 36px;
+    }
+
+    .precio {
+        font-size: 0.95rem;
+    }
+
+    .selector-tallas span {
+        width: 28px;
+        height: 28px;
+        font-size: 0.7rem;
+    }
+}

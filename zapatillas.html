@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Zapatillas - AXIS WEAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Estilo para los títulos de sección que rompen el grid correctamente */
+        .subtitulo-seccion {
+            grid-column: 1 / -1;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #333;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">AXIS WEAR</a>
+
+    <nav class="nav">
+        <div class="dropdown">
+            <a href="#">Tienda</a>
+            <div class="dropdown-menu">
+                <a href="polos.html">Polos</a>
+                <a href="pantalones.html">Pantalones</a>
+                <a href="zapatillas.html">Zapatillas</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Nuevo</a>
+            <div class="dropdown-menu">
+                <a href="#">Últimos productos</a>
+                <a href="#">Tendencias</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Colección</a>
+            <div class="dropdown-menu">
+                <a href="#">Verano</a>
+                <a href="#">Invierno</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Acerca</a>
+            <div class="dropdown-menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="actions">
+        <div class="search-box">
+                <input type="text" id="inputSearch" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+            </div>
+        
+            <ul id="box-search">
+                 <li><a href="index.html"><i class="fas fa-search"></i>Inicio</a></li>
+                 <li><a href="polos.html"><i class="fas fa-search"></i>Polos</a></li>
+                 <li><a href="pantalones.html"><i class="fas fa-search"></i>Pantalones</a></li>
+                 <li><a href="zapatillas.html"><i class="fas fa-search"></i>Zapatillas</a></li>
+                 <li><a href="nosotros.html"><i class="fas fa-search"></i>Nosotros</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Últimos productos</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Tendencias</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Colección Verano</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Colección Invierno</a></li>
+            </ul>
+
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+</header>
+
+<main class="catalog-container" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+    <div class="grid-productos-catalogo" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px;">
+        
+        <h2 class="subtitulo-seccion">Zapatillas Urbanas</h2>
+
+        <div class="prod-card-col">
+            <div class="img-wrapper" style="position: relative; overflow: hidden;">
+                <span class="badge-descuento" style="position: absolute; top: 10px; left: 10px; background: #000; color: #fff; padding: 4px 8px; font-size: 0.8rem; font-weight: bold;">20%</span>
+                <i class="fa-regular fa-heart icon-corazon" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 1.2rem;"></i>
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=600&auto=format&fit=crop" alt="Zapatilla Urban Classic" style="width: 100%; height: 350px; object-fit: cover;">
+            </div>
+            <div class="prod-info-detalle" style="padding: 15px 0;">
+                <span class="cat-tag" style="font-size: 0.75rem; text-transform: uppercase; color: #777; letter-spacing: 1px;">AXIS WEAR Calzado</span>
+                <h3 style="font-size: 1rem; margin: 5px 0; font-weight: 500;">Zapatilla Urban Retro Classic Leather</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes" style="text-decoration: line-through; color: #999; font-size: 0.9rem; margin-right: 10px;">S/ 249.00</span>
+                    <span class="precio" style="font-weight: bold; color: #111;">S/ 199.20</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor" style="margin-bottom: 10px;">
+                    <span class="txt-talla" style="font-size: 0.85rem; color: #555;">Talla (PE)</span>
+                    <div class="selector-tallas" style="display: flex; gap: 5px; margin-top: 5px;">
+                        <span class="activa" style="border: 1px solid #111; padding: 2px 6px; font-size: 0.8rem; background: #111; color: #fff; cursor: pointer;">39</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">40</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">41</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">42</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito" style="width: 100%; background: #111; color: #fff; border: none; padding: 10px; font-weight: bold; cursor: pointer; font-size: 0.85rem; letter-spacing: 1px;">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <div class="prod-card-col">
+            <div class="img-wrapper" style="position: relative; overflow: hidden;">
+                <i class="fa-regular fa-heart icon-corazon" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 1.2rem;"></i>
+                <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600&auto=format&fit=crop" alt="Zapatilla Minimalist White" style="width: 100%; height: 350px; object-fit: cover;">
+            </div>
+            <div class="prod-info-detalle" style="padding: 15px 0;">
+                <span class="cat-tag" style="font-size: 0.75rem; text-transform: uppercase; color: #777; letter-spacing: 1px;">AXIS WEAR Calzado</span>
+                <h3 style="font-size: 1rem; margin: 5px 0; font-weight: 500;">Zapatilla Minimalist Canvas Total White</h3>
+                <div class="precio-contenedor">
+                    <span class="precio" style="font-weight: bold; color: #111;">S/ 159.00</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor" style="margin-bottom: 10px;">
+                    <span class="txt-talla" style="font-size: 0.85rem; color: #555;">Talla (PE)</span>
+                    <div class="selector-tallas" style="display: flex; gap: 5px; margin-top: 5px;">
+                        <span class="activa" style="border: 1px solid #111; padding: 2px 6px; font-size: 0.8rem; background: #111; color: #fff; cursor: pointer;">37</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">38</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">39</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">40</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito" style="width: 100%; background: #111; color: #fff; border: none; padding: 10px; font-weight: bold; cursor: pointer; font-size: 0.85rem; letter-spacing: 1px;">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <div class="prod-card-col">
+            <div class="img-wrapper" style="position: relative; overflow: hidden;">
+                <span class="badge-descuento" style="position: absolute; top: 10px; left: 10px; background: #000; color: #fff; padding: 4px 8px; font-size: 0.8rem; font-weight: bold;">15%</span>
+                <i class="fa-regular fa-heart icon-corazon" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 1.2rem;"></i>
+                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=600&auto=format&fit=crop" alt="Zapatilla Platform Street" style="width: 100%; height: 350px; object-fit: cover;">
+            </div>
+            <div class="prod-info-detalle" style="padding: 15px 0;">
+                <span class="cat-tag" style="font-size: 0.75rem; text-transform: uppercase; color: #777; letter-spacing: 1px;">AXIS WEAR Calzado</span>
+                <h3 style="font-size: 1rem; margin: 5px 0; font-weight: 500;">Zapatilla Chunky Platform Pastel Drops</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes" style="text-decoration: line-through; color: #999; font-size: 0.9rem; margin-right: 10px;">S/ 279.00</span>
+                    <span class="precio" style="font-weight: bold; color: #111;">S/ 237.15</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor" style="margin-bottom: 10px;">
+                    <span class="txt-talla" style="font-size: 0.85rem; color: #555;">Talla (PE)</span>
+                    <div class="selector-tallas" style="display: flex; gap: 5px; margin-top: 5px;">
+                        <span class="activa" style="border: 1px solid #111; padding: 2px 6px; font-size: 0.8rem; background: #111; color: #fff; cursor: pointer;">36</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">37</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">38</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito" style="width: 100%; background: #111; color: #fff; border: none; padding: 10px; font-weight: bold; cursor: pointer; font-size: 0.85rem; letter-spacing: 1px;">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+
+        <h2 class="subtitulo-seccion">Zapatillas Deportivas / Streetwear</h2>
+
+        <div class="prod-card-col">
+            <div class="img-wrapper" style="position: relative; overflow: hidden;">
+                <i class="fa-regular fa-heart icon-corazon" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 1.2rem;"></i>
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=600&auto=format&fit=crop" alt="Zapatilla Volt Running" style="width: 100%; height: 350px; object-fit: cover;">
+            </div>
+            <div class="prod-info-detalle" style="padding: 15px 0;">
+                <span class="cat-tag" style="font-size: 0.75rem; text-transform: uppercase; color: #777; letter-spacing: 1px;">AXIS WEAR Performance</span>
+                <h3 style="font-size: 1rem; margin: 5px 0; font-weight: 500;">Zapatilla Street Sneaker Volt Performance</h3>
+                <div class="precio-contenedor">
+                    <span class="precio" style="font-weight: bold; color: #111;">S/ 320.00</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor" style="margin-bottom: 10px;">
+                    <span class="txt-talla" style="font-size: 0.85rem; color: #555;">Talla (PE)</span>
+                    <div class="selector-tallas" style="display: flex; gap: 5px; margin-top: 5px;">
+                        <span class="activa" style="border: 1px solid #111; padding: 2px 6px; font-size: 0.8rem; background: #111; color: #fff; cursor: pointer;">40</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">41</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">42</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">43</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito" style="width: 100%; background: #111; color: #fff; border: none; padding: 10px; font-weight: bold; cursor: pointer; font-size: 0.85rem; letter-spacing: 1px;">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <div class="prod-card-col">
+            <div class="img-wrapper" style="position: relative; overflow: hidden;">
+                <span class="badge-descuento" style="position: absolute; top: 10px; left: 10px; background: #000; color: #fff; padding: 4px 8px; font-size: 0.8rem; font-weight: bold;">10%</span>
+                <i class="fa-regular fa-heart icon-corazon" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 1.2rem;"></i>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop" alt="Zapatilla Crimson Tech" style="width: 100%; height: 350px; object-fit: cover;">
+            </div>
+            <div class="prod-info-detalle" style="padding: 15px 0;">
+                <span class="cat-tag" style="font-size: 0.75rem; text-transform: uppercase; color: #777; letter-spacing: 1px;">AXIS WEAR Performance</span>
+                <h3 style="font-size: 1rem; margin: 5px 0; font-weight: 500;">Zapatilla Crimson Tech Knit Running</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes" style="text-decoration: line-through; color: #999; font-size: 0.9rem; margin-right: 10px;">S/ 299.00</span>
+                    <span class="precio" style="font-weight: bold; color: #111;">S/ 269.10</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor" style="margin-bottom: 10px;">
+                    <span class="txt-talla" style="font-size: 0.85rem; color: #555;">Talla (PE)</span>
+                    <div class="selector-tallas" style="display: flex; gap: 5px; margin-top: 5px;">
+                        <span class="activa" style="border: 1px solid #111; padding: 2px 6px; font-size: 0.8rem; background: #111; color: #fff; cursor: pointer;">39</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">40</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">41</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito" style="width: 100%; background: #111; color: #fff; border: none; padding: 10px; font-weight: bold; cursor: pointer; font-size: 0.85rem; letter-spacing: 1px;">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <div class="prod-card-col">
+            <div class="img-wrapper" style="position: relative; overflow: hidden;">
+                <i class="fa-regular fa-heart icon-corazon" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 1.2rem;"></i>
+                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=600&auto=format&fit=crop" alt="Zapatilla White Clean Performance" style="width: 100%; height: 350px; object-fit: cover;">
+            </div>
+            <div class="prod-info-detalle" style="padding: 15px 0;">
+                <span class="cat-tag" style="font-size: 0.75rem; text-transform: uppercase; color: #777; letter-spacing: 1px;">AXIS WEAR Performance</span>
+                <h3 style="font-size: 1rem; margin: 5px 0; font-weight: 500;">Zapatilla Street Aero-Comfort Total White</h3>
+                <div class="precio-contenedor">
+                    <span class="precio" style="font-weight: bold; color: #111;">S/ 285.00</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor" style="margin-bottom: 10px;">
+                    <span class="txt-talla" style="font-size: 0.85rem; color: #555;">Talla (PE)</span>
+                    <div class="selector-tallas" style="display: flex; gap: 5px; margin-top: 5px;">
+                        <span class="activa" style="border: 1px solid #111; padding: 2px 6px; font-size: 0.8rem; background: #111; color: #fff; cursor: pointer;">41</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">42</span>
+                        <span style="border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; cursor: pointer;">43</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito" style="width: 100%; background: #111; color: #fff; border: none; padding: 10px; font-weight: bold; cursor: pointer; font-size: 0.85rem; letter-spacing: 1px;">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2>AXIS WEAR</h2>
+            <p>Moda urbana para quienes viven su estilo todos los días.</p>
+            <div class="socials">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                 
+                <a href="https://tiktok.com" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                
+                <a href="https://facebook.com" target="_blank">
+                     <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>ENLACES</h3>
+            <a href="#">Inicio</a>
+            <a href="#">Tienda</a>
+            <a href="#">Colección</a>
+            <a href="#">Acerca</a>
+            <a href="#">Contacto</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>AYUDA</h3>
+            <a href="#">Envíos</a>
+            <a href="#">Cambios y devoluciones</a>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>CONTACTO</h3>
+            <p>AxisWear15@gmail.com</p>
+            <p>+51 910 920 563</p>
+            <p>Lima, Perú, Los Olivos</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>SUSCRÍBETE</h3>
+            <p>Recibe nuestras novedades y promociones exclusivas.</p>
+
+            <div class="subscribe">
+                <input type="email" placeholder="Tu email">
+                <button>→</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

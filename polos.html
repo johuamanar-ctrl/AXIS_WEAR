@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Polos - AXIS WEAR</title>
+    <!-- Vinculación de tus estilos globales y específicos de polos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="polos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Regla para que los títulos seccionen correctamente el CSS Grid */
+        .subtitulo-seccion {
+            grid-column: 1 / -1;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #333;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🔝 HEADER (Mantiene tu barra original intacta) -->
+<header class="header">
+    <a href="index.html" class="logo">AXIS WEAR</a>
+
+    <nav class="nav">
+        <div class="dropdown">
+            <a href="#">Tienda</a>
+            <div class="dropdown-menu">
+                <a href="polos.html">Polos</a>
+                <a href="pantalones.html">Pantalones</a>
+                <a href="zapatillas.html">Zapatillas</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Nuevo</a>
+            <div class="dropdown-menu">
+                <a href="#">Últimos productos</a>
+                <a href="#">Tendencias</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Colección</a>
+            <div class="dropdown-menu">
+                <a href="#">Verano</a>
+                <a href="#">Invierno</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Acerca</a>
+            <div class="dropdown-menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="actions">
+        <div class="search-box">
+                <input type="text" id="inputSearch" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+            </div>
+        
+            <ul id="box-search">
+                 <li><a href="index.html"><i class="fas fa-search"></i>Inicio</a></li>
+                 <li><a href="polos.html"><i class="fas fa-search"></i>Polos</a></li>
+                 <li><a href="pantalones.html"><i class="fas fa-search"></i>Pantalones</a></li>
+                 <li><a href="zapatillas.html"><i class="fas fa-search"></i>Zapatillas</a></li>
+                 <li><a href="nosotros.html"><i class="fas fa-search"></i>Nosotros</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Últimos productos</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Tendencias</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Colección Verano</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Colección Invierno</a></li>
+            </ul>
+
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+</header>
+
+<!-- 👕 SECCIÓN DE POLOS (Catálogo Multi-fila con Grid Actualizado) -->
+<main class="catalog-container">
+    <div class="grid-productos-catalogo">
+        
+        <!-- 🤵 SECCIÓN: POLO CABALLEROS                                               -->
+        <h2 class="subtitulo-seccion">Polo Caballeros</h2>
+
+        <!-- Producto 1 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/114151156_01/public" alt="Polo Masculino Raglán">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Polo hombre manga larga raglán urbano</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 49.90</span>
+                    <span class="precio">S/ 34.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span><span>XL</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <i class="fa-solid fa-expand icon-expand"></i>
+                <img src="https://dpq25p1ucac70.cloudfront.net/seller-place-files/mrkl-files/1831/HOMBRE/U10-Blanco-Modelo_223748510602_23.jpeg" alt="Polo Blanco Clásico">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Polo manga larga clásico esencial</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 49.90</span>
+                    <span class="precio">S/ 34.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span><span>XL</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+        
+        <!-- Producto 3 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">40%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://img-lcwaikiki.mncdn.com/mnpadding/320/426/ffffff/pim/productimages/20242/7159420/v1/l_20242-w42273z8-shf-96-76-93-186_a.jpg" alt="Polo Casual Manga Corta">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Polo casual hombre manga corta minimal</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 69.90</span>
+                    <span class="precio">S/ 41.94</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span><span>XL</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/4562/PMP20000241727/full_image-3.jpeg" alt="Polo Básico Hombre">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Polo hombre manga corta básico</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 49.90</span>
+                    <span class="precio">S/ 34.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://printalba.com/wp-content/uploads/2021/04/Camiseta-Classic-cuello-en-V.jpg" alt="Polo Cuello V">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Polo casual elegante cuello en V</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 49.90</span>
+                    <span class="precio">S/ 34.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+ <!-- Producto 6 (Movido aquí por orden de categoría) -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">40%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://dropthelabel.pe/cdn/shop/files/T-shirtSteelBlue-Front_68bc25a3-e5bf-4630-b8b6-d4c152d7cd81.jpg?v=1725745365&width=750" alt="Polo Steel Blue Dama">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Polo corto para hombre color azul acero diseño minimalista</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 69.90</span>
+                    <span class="precio">S/ 41.94</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+<!-- 👩 SECCIÓN: POLO DAMAS                                                     -->
+        <h2 class="subtitulo-seccion">Polo Damas</h2>
+
+    
+        <!-- Producto 7 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://media.falabella.com/falabellaPE/142896618_01/w=1200,h=1200,fit=pad">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Polo corto para dama color negro diseño minimalista esencial</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 49.90</span>
+                    <span class="precio">S/ 34.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://topitop.vtexassets.com/arquivos/ids/392133/3165478_1.jpg?v=638957307502600000" alt="Polo Blanco Dama Orgánico">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Polo corto para dama color blanco óptico diseño minimalista orgánico</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 49.90</span>
+                    <span class="precio">S/ 34.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">40%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://th.bing.com/th/id/R.0fd38c15cacdf405bd8946c61f3a3fc8?rik=GbqQCPt0JeshBg&riu=http%3a%2f%2fikual.pe%2fcdn%2fshop%2ffiles%2fIKUBPCCRMPMAXXECREM-BASIC_20MUJER-2024_2.jpg%3fv%3d1713210340&ehk=pka9cRQxKwDvwlI9ZjTdE%2fc3Em9D6civxtHOohG%2bkLw%3d&risl=&pid=ImgRaw&r=0" alt="Polo Crema Oversize Dama">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Polo holgado para dama color crema diseño minimalista oversize</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 69.90</span>
+                    <span class="precio">S/ 41.94</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://qooqer.com/files/images/antracira-144037.jpg">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Polo corto para dama color gris melange diseño minimalista confort</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 49.90</span>
+                    <span class="precio">S/ 34.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 11 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://terryguti.com/wp-content/uploads/2024/06/melody2224-scaled.jpg" alt="Polo Verde Oliva Dama">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Polo corto para dama color verde oliva diseño minimalista suave</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 49.90</span>
+                    <span class="precio">S/ 34.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 12 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">40%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://media.falabella.com/falabellaPE/153718869_01/w=1200,h=1200,fit=pad">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Polo corto para dama color azul marino diseño minimalista clásico</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 69.90</span>
+                    <span class="precio">S/ 41.94</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2>AXIS WEAR</h2>
+            <p>Moda urbana para quienes viven su estilo todos los días.</p>
+            <div class="socials">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                 
+                <a href="https://tiktok.com" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                
+                <a href="https://facebook.com" target="_blank">
+                     <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>ENLACES</h3>
+            <a href="#">Inicio</a>
+            <a href="#">Tienda</a>
+            <a href="#">Colección</a>
+            <a href="#">Acerca</a>
+            <a href="#">Contacto</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>AYUDA</h3>
+            <a href="#">Envíos</a>
+            <a href="#">Cambios y devoluciones</a>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>CONTACTO</h3>
+            <p>AxisWear15@gmail.com</p>
+            <p>+51 910 920 563</p>
+            <p>Lima, Perú, Los Olivos</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>SUSCRÍBETE</h3>
+            <p>Recibe nuestras novedades y promociones exclusivas.</p>
+
+            <div class="subscribe">
+                <input type="email" placeholder="Tu email">
+                <button>→</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="main.js"></script>
+
+</body>
+</html>

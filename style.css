@@ -1,0 +1,927 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    background: white;
+
+    border-bottom: 1px solid #eee;
+
+    position: relative;
+
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+
+    color: #000;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: transform .2s ease, color .2s ease;
+}
+
+.logo:hover{
+    transform: scale(1.03);
+    color: #444;
+}
+
+/* NAV */
+.nav{
+    display: flex;
+    gap: 40px;
+}
+
+/*Buscador*/
+#box-search{
+    position: absolute;
+
+    top: 55px;
+    right: 75px;          /* En lugar de left */
+    width: 300px;
+
+    background: #fff;
+    list-style: none;
+    display: none;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+    z-index: 9999;
+}
+
+#box-search li{
+    list-style: none;
+}
+
+#box-search li a{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 15px;
+    text-decoration:none;
+    color:#222;
+    transition:.2s;
+}
+
+#box-search li a:hover{
+    background:#f5f5f5;
+}
+
+#box-search i{
+    width:18px;
+    text-align:center;
+}
+
+/* CONTENEDOR DROPDOWN */
+.dropdown{
+    position: relative;
+}
+
+/* links principales */
+.dropdown > a{
+
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 15px;
+
+    display: block;
+
+    padding: 10px 0;
+
+    position: relative;
+}
+
+/* LÍNEA ANIMADA */
+.dropdown > a::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+
+    height: 2px;
+
+    background: black;
+
+    transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+.dropdown:hover > a::after{
+    width: 100%;
+}
+
+/* panel qu se despliega */
+.dropdown-menu{
+    position: absolute;
+
+    top: 120%;
+    left: 0;
+
+    min-width: 200px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    padding: 10px 0;
+    z-index: 1000;
+
+    /* aniamcioncilla */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s;
+}
+
+/* MOSTRAR */
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Pum menu */
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/* LINKS INTERNOS */
+.dropdown-menu a{
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+/* HOVER ITEMS */
+.dropdown-menu a:hover{
+    background: #f5f5f5;
+    padding-left: 24px;
+}
+
+/* ACCIONES */
+.actions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;   /* Agregar */
+}
+
+/* BUSCADOR */
+.search-box{
+    position: relative;
+}
+
+#box-search{
+    position:absolute;
+    top:45px;
+    left:0;
+
+    width:100%;
+    max-width:300px;
+    background:#fff;
+    display:none;
+    border-radius:8px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    z-index:9999;
+}
+
+/* INPUT */
+.search-box input{
+    padding: 8px 35px 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* FOCUS INPUT */
+.search-box input:focus{
+    border-color: black;
+}
+
+/* ICONO BUSCADOR */
+.search-box i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #666;
+}
+
+/* ICONOS */
+.actions a{
+    color: black;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* HOVER ICONOS */
+.actions a:hover{
+    transform: translateY(-2px);
+}
+
+/* HERO */
+.hero{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+/* SLIDES */
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+/* SLIDE ACTIVO */
+.slide.active{
+    display: block;
+}
+
+/* OSCURECER IMAGEN */
+.slide::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+}
+
+/* TEXTO HERO */
+.overlay{
+    position: relative;
+    color: white;
+    max-width: 500px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 60px;
+    z-index: 2;
+}
+
+/* TITULO HERO */
+.overlay h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* TEXTO HERO */
+.overlay p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* BOTONES */
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+/* BOTÓN GENERAL */
+.btn{
+    padding: 12px 22px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+/* BOTÓN PRINCIPAL */
+.primary{
+    background: white;
+    color: black;
+}
+
+/* HOVER */
+.primary:hover{
+    transform: translateY(-2px);
+}
+
+/* BOTÓN SECUNDARIO */
+.secondary{
+
+    background: transparent;
+
+    border: 1px solid white;
+
+    color: white;
+}
+
+/* HOVER */
+.secondary:hover{
+    background: white;
+    color: black;
+}
+
+/* DOTS */
+.dots{
+
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+/* DOT */
+.dot{
+
+    height: 10px;
+    width: 10px;
+
+    margin: 5px;
+
+    background: #ccc;
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* DOT ACTIVO */
+.dot.active{
+    background: white;
+}
+
+/* CATEGORÍAS */
+.categorias{
+
+    padding: 60px 40px;
+
+    text-align: center;
+}
+
+/* TITULO */
+.categorias h2{
+    margin-bottom: 30px;
+}
+
+/* coteneder */
+.cat-container{
+
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.cat-card{
+
+    position: relative;
+
+    width: 300px;
+    height: 200px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+/* imagen */
+.cat-card img{
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+/* HOVER IMAGEN */
+.cat-card:hover img{
+    transform: scale(1.05);
+}
+
+/* Infoooo */
+.cat-info{
+
+    position: absolute;
+
+    bottom: 15px;
+    left: 15px;
+
+    color: white;
+
+    z-index: 2;
+}
+
+/* link */
+.cat-info a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* DESTACADOS */
+.destacados{
+
+    padding: 60px 40px;
+
+    text-align: center;
+}
+
+/* TITULO */
+.destacados h2{
+    margin-bottom: 30px;
+}
+
+/* productos */
+.prod-container{
+
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+/* cartilla productos */
+.prod-card{
+
+    width: 200px;
+
+    text-align: left;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+/* HOVER */
+.prod-card:hover{
+    transform: translateY(-5px);
+}
+
+/* IMG PRODUCTO */
+.prod-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* TITULO */
+.prod-card h3{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* TEXTO */
+.prod-card p{
+    font-size: 14px;
+    color: gray;
+}
+
+/* FOOTER */
+.footer{
+
+    background: black;
+
+    color: white;
+
+    padding: 50px 40px;
+}
+
+/* CONTENEDOR */
+.footer-container{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+/* COLUMNAS */
+.footer-col{
+
+    display: flex;
+
+    flex-direction: column;
+
+    max-width: 200px;
+}
+
+/* TITULOS */
+.footer-col h2{
+    margin-bottom: 10px;
+}
+
+.footer-col h3{
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* LINKS */
+.footer-col a{
+
+    text-decoration: none;
+
+    color: #ccc;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+.footer-col a:hover{
+    color: white;
+}
+
+/* TEXTO */
+.footer-col p{
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+/* REDES */
+.socials{
+
+    margin-top: 10px;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+/* suscripcion */
+.subscribe{
+
+    display: flex;
+
+    margin-top: 10px;
+}
+
+/* INPUT */
+.subscribe input{
+
+    padding: 8px;
+
+    border: none;
+
+    outline: none;
+}
+
+/* BOTÓN */
+.subscribe button{
+
+    background: white;
+
+    border: none;
+
+    padding: 8px 12px;
+
+    cursor: pointer;
+}
+
+/* DOTS */
+.dots{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* DOT */
+.dot{
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* DOT ACTIVO */
+.dot.active{
+    background: white;
+}
+
+/* CATEGORÍAS */
+.categorias{
+
+    padding: 60px 40px;
+    text-align: center;
+}
+
+/* Tirulo */
+.categorias h2{
+    margin-bottom: 30px;
+}
+
+/* contenedor */
+.cat-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* =========================================
+   CATEGORÍAS
+========================================= */
+
+.categorias{
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.categorias h2{
+    margin-bottom: 30px;
+}
+
+/* CONTENEDOR */
+.cat-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* =========================================
+   TARJETA
+========================================= */
+
+.cat-card{
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.cat-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* El girito */
+.cat-card:hover .cat-inner{
+    transform: rotateY(180deg);
+}
+
+/* ======================================
+   CARAS
+========================================= */
+
+.cat-front,
+.cat-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+/* ======================================
+   Flente
+========================================= */
+
+.cat-front{
+    position: relative;
+}
+
+.cat-front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.cat-card:hover .cat-front img{
+    transform: scale(1.05);
+}
+
+.cat-front::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+
+.cat-info{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    z-index: 2;
+}
+
+.cat-info h3{
+    margin-bottom: 5px;
+}
+
+.cat-info a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ======================================
+   PARTE de atra
+========================================= */
+
+.cat-back{
+
+    background: #111;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 12px;
+}
+
+/* TEXTO */
+.cat-back p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* BOTÓN */
+.cat-back button{
+
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER BOTÓN */
+.cat-back button:hover{
+    transform: scale(1.05);
+}
+
+/*Burbujar movimiento*/
+.burbuja{
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    background: #a1a39d;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(3){
+    width: 70px;
+    height: 70px;
+    left: 35%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(4){
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 110px;
+    height: 110px;
+    left: 65%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 90px;
+    height: 90px;
+    left: 80%;
+    animation-duration: 5s;
+    animation-delay: 4s;
+}
+
+.burbuja:nth-child(7){
+    width: 60px;
+    height: 60px;
+    left: 15%;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(8){
+    width: 120px;
+    height: 120px;
+    left: 40%;
+    animation-duration: 9s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 50px;
+    height: 50px;
+    left: 75%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 100px;
+    height: 100px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}

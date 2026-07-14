@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pantalones - AXIS WEAR</title>
+    <!-- Vinculación de tus estilos globales y específicos de pantalones -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pantalones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Regla para que los títulos seccionen correctamente el CSS Grid */
+        .subtitulo-seccion {
+            grid-column: 1 / -1;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #333;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🔝 HEADER -->
+<header class="header">
+    <a href="index.html" class="logo">AXIS WEAR</a>
+
+    <nav class="nav">
+        <div class="dropdown"><a href="index.html">Inicio</a></div>
+        <div class="dropdown">
+            <a href="#">Tienda</a>
+            <div class="dropdown-menu">
+                <a href="polos.html">Polos</a>
+                <a href="pantalones.html">Pantalones</a>
+                <a href="zapatillas.html">Zapatillas</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Nuevo</a>
+            <div class="dropdown-menu">
+                <a href="#">Últimos productos</a>
+                <a href="#">Tendencias</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Colección</a>
+            <div class="dropdown-menu">
+                <a href="#">Verano</a>
+                <a href="#">Invierno</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Acerca</a>
+            <div class="dropdown-menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="actions">
+        <div class="search-box">
+                <input type="text" id="inputSearch" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+            </div>
+        
+            <ul id="box-search">
+                 <li><a href="index.html"><i class="fas fa-search"></i>Inicio</a></li>
+                 <li><a href="polos.html"><i class="fas fa-search"></i>Polos</a></li>
+                 <li><a href="pantalones.html"><i class="fas fa-search"></i>Pantalones</a></li>
+                 <li><a href="zapatillas.html"><i class="fas fa-search"></i>Zapatillas</a></li>
+                 <li><a href="nosotros.html"><i class="fas fa-search"></i>Nosotros</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Últimos productos</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Tendencias</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Colección Verano</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Colección Invierno</a></li>
+            </ul>
+            
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+</header>
+
+<!-- 👖 SECCIÓN DE PANTALONES -->
+<main class="catalog-container">
+    <div class="grid-productos-catalogo">
+        
+        <!-- 🤵 SECCIÓN: PANTALONES CABALLEROS                                          -->
+        <h2 class="subtitulo-seccion">Pantalones Caballeros</h2>
+
+        <!-- Producto 1 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">25%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://media.falabella.com/falabellaPE/150828785_01/w=1200,h=1200,fit=pad" alt="Pantalón Cargo Negro">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Pantalón cargo urbano multibolsillos negro</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 119.90</span>
+                    <span class="precio">S/ 89.92</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">30</span><span>32</span><span>34</span><span>36</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://topitop.vtexassets.com/arquivos/ids/380593/3094968_1.jpg?v=638793136845370000" alt="Jogger Gris Urbano">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Pantalón jogger confort gris melange escencial</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 99.90</span>
+                    <span class="precio">S/ 69.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span><span>XL</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+        
+        <!-- Producto 3 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">20%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://www.ostu.com/dw/image/v2/BHFM_PRD/on/demandware.static/-/Sites-storefront_catalog_ostu/default/dw6a4ffa81/images/hi-res/Todo/jeans-denim-60160331-581_1.jpg?sw=800&sh=960" alt="Jeans Loose Fit">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Jeans denim loose fit azul lavado clásico</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 139.90</span>
+                    <span class="precio">S/ 111.92</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">30</span><span>32</span><span>34</span><span>36</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">35%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://media.falabella.com/falabellaPE/149563962_01/w=1200,h=1200,fit=pad" alt="Pantalón Parachute Beige">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Pantalón parachute técnico color beige minimal</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 149.90</span>
+                    <span class="precio">S/ 97.43</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span><span>XL</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://media.falabella.com/falabellaPE/883693284_1/w=1200,h=1200,fit=pad" alt="Pantalón Carpintero">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Pantalón estilo carpintero canvas color lino</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 129.90</span>
+                    <span class="precio">S/ 90.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">30</span><span>32</span><span>34</span><span>36</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">40%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://shendyvendy.com/cdn/shop/files/VERDEOLIVOII_e4045e6a-c5e5-4e66-b154-ea49e4087f66.jpg?v=1740768124&width=640" alt="Jogger Cargo Verde">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR hombre</span>
+                <h3>Jogger cargo camuflado urbano verde oliva</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 119.90</span>
+                    <span class="precio">S/ 71.94</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span><span>XL</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- 👩 SECCIÓN: PANTALONES DAMAS                                               -->
+        <h2 class="subtitulo-seccion">Pantalones Damas</h2>
+
+        <!-- Producto 7 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://simple.ripley.com.pe/product/_next/image?url=https%3A%2F%2Frimage.ripley.com.pe%2Fhome.ripley%2FAttachment%2FMKP%2F4746%2FPMP20000562765%2Ffull_image-3&w=640&q=100" alt="Jeans Wide Leg Negro">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Jeans wide leg tiro alto rígido negro lavado</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 129.90</span>
+                    <span class="precio">S/ 90.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">26</span><span>28</span><span>30</span><span>32</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">25%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://simple.ripley.com.pe/product/_next/image?url=https%3A%2F%2Fhome.ripley.com.pe%2FAttachment%2FWOP_5%2F2015313472053%2F2015313472053_2.jpg&w=640&q=100" alt="Jogger Oversize Dama">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Pantalón jogger oversize algodón premium crema</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 99.90</span>
+                    <span class="precio">S/ 74.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">35%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://media.falabella.com/falabellaPE/129528933_01/w=1200,h=1200,fit=pad" alt="Cargo Parachute Dama">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Pantalón parachute cargo tiro bajo gris asfalto</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 139.90</span>
+                    <span class="precio">S/ 90.94</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">20%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://media.falabella.com/falabellaPE/19928751_1/w=1200,h=1200,fit=pad" alt="Mom Jeans">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Mom jeans denim clásico celeste tiro alto</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 119.90</span>
+                    <span class="precio">S/ 95.92</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">26</span><span>28</span><span>30</span><span>32</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 11 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://www.tradeinn.com/f/14004/140047915/superdry-pantalones-cargo-vintage-baggy-parachute.webp" alt="Cargo Kaki Dama">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Pantalón cargo relaxed fit gabardina color kaki</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 129.90</span>
+                    <span class="precio">S/ 90.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">26</span><span>28</span><span>30</span><span>32</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 12 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">40%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://bembellaperu.com/cdn/shop/files/pantalon-florencia-delantero-marron.png?v=1773982626&width=1440" alt="Sastrero Urbano">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR dama</span>
+                <h3>Pantalón sastrero holgado silueta slouchy marrón</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 149.90</span>
+                    <span class="precio">S/ 89.94</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2>AXIS WEAR</h2>
+            <p>Moda urbana para quienes viven su estilo todos los días.</p>
+            <div class="socials">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                 
+                <a href="https://tiktok.com" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                
+                <a href="https://facebook.com" target="_blank">
+                     <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>ENLACES</h3>
+            <a href="#">Inicio</a>
+            <a href="#">Tienda</a>
+            <a href="#">Colección</a>
+            <a href="#">Acerca</a>
+            <a href="#">Contacto</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>AYUDA</h3>
+            <a href="#">Envíos</a>
+            <a href="#">Cambios y devoluciones</a>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>CONTACTO</h3>
+            <p>AxisWear15@gmail.com</p>
+            <p>+51 910 920 563</p>
+            <p>Lima, Perú, Los Olivos</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>SUSCRÍBETE</h3>
+            <p>Recibe nuestras novedades y promociones exclusivas.</p>
+
+            <div class="subscribe">
+                <input type="email" placeholder="Tu email">
+                <button>→</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
