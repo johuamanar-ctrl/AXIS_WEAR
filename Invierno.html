@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Polos - AXIS WEAR</title>
+    <!-- Vinculación de tus estilos globales y específicos de polos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="polos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Regla para que los títulos seccionen correctamente el CSS Grid */
+        .subtitulo-seccion {
+            grid-column: 1 / -1;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #333;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🔝 HEADER (Mantiene tu barra original intacta) -->
+<header class="header">
+    <a href="index.html" class="logo">AXIS WEAR</a>
+
+    <nav class="nav">
+        <div class="dropdown">
+            <a href="#">Tienda</a>
+            <div class="dropdown-menu">
+                <a href="polos.html">Polos</a>
+                <a href="pantalones.html">Pantalones</a>
+                <a href="zapatillas.html">Zapatillas</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Nuevo</a>
+            <div class="dropdown-menu">
+                <a href="#">Últimos productos</a>
+                <a href="#">Tendencias</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Colección</a>
+            <div class="dropdown-menu">
+                <a href="#">Verano</a>
+                <a href="#">Invierno</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Acerca</a>
+            <div class="dropdown-menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="actions">
+        <div class="search-box">
+                <input type="text" id="inputSearch" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+            </div>
+        
+            <ul id="box-search">
+                 <li><a href="index.html"><i class="fas fa-search"></i>Inicio</a></li>
+                 <li><a href="polos.html"><i class="fas fa-search"></i>Polos</a></li>
+                 <li><a href="pantalones.html"><i class="fas fa-search"></i>Pantalones</a></li>
+                 <li><a href="zapatillas.html"><i class="fas fa-search"></i>Zapatillas</a></li>
+                 <li><a href="nosotros.html"><i class="fas fa-search"></i>Nosotros</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Últimos productos</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Tendencias</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Colección Verano</a></li>
+                 <li><a href="#"><i class="fas fa-search"></i>Colección Invierno</a></li>
+            </ul>
+
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+</header>
+
+
+<main class="catalog-container">
+    <div class="grid-productos-catalogo">
+        
+        <h2 class="subtitulo-seccion">Colección Invierno - Hombre</h2>
+
+        <!-- Producto 1 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgWDPeNXllzlvGLwkGzoOKjNshks3VLLtOWZlGS_LKh-DjVv-b6EpBgr0&s=10" alt=" Raglán">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Hombre</span>
+                <h3>Hoodie Urban Essential Negro</h3>
+                <span class="precio-antes">S/ 149.90</span>
+                <span class="precio">S/ 104.93</span>>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span><span>XL</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">25%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrHAeq1e8VHqZ2vz4RKfb4G-W8wiLkuKCeOXaaj0elgLHF4Axy5gFtBnI&s=10" alt=" Raglán">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Hombre</span>
+                <h3>Casaca Puffer Minimal Beige</h3>
+                <span class="precio-antes">S/ 239.90</span>
+                <span class="precio">S/ 179.93</span>>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span><span>XL</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+        
+        <!-- Producto 3 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">40%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://fashionspark.com/cdn/shop/files/p-970816303-1.webp?v=1769109623" alt="">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Hombre</span>
+                <h3>Polera Oversize Gris Stone</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 129.90</span>
+                    <span class="precio">S/ 77.94</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas">
+                        <span class="activa">S</span><span>M</span><span>L</span><span>XL</span>
+                    </div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://media.falabella.com/falabellaPE/150491650_01/w=1200,h=1200,fit=pad" alt="">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Hombre</span>
+                <h3>Jogger Térmico Urban Fit</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 109.90</span>
+                    <span class="precio">S/ 76.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://www.migamarra.pe/cdn/shop/files/25-0707_tamano_app_IA.003.jpg?v=1751996834" alt="">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Hombre</span>
+                <h3>Casaca Bomber Negra Clásica</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 199.90</span>
+                    <span class="precio">S/ 139.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+ <!-- Producto 6 (Movido aquí por orden de categoría) -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">40%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://dropthelabel.pe/cdn/shop/files/HD101-IOBE-01b.jpg?v=1773868110&width=1946" alt="">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Hombre</span>
+                <h3>Hoodie Premium Azul Marino</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 159.90</span>
+                    <span class="precio">S/ 95.94</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+<!-- 👩 SECCIÓN:  DAMAS                                                     -->
+        <h2 class="subtitulo-seccion">Colección Invierno - Damas</h2>
+
+        <!-- Producto 7 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4l8iqxW5b-dv2k7k7yBiDU4mrNSYna392lhKRYwP33Dx_L3IiG3fh510&s=10">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Mujer</span>
+                <h3>Hoodie Oversize Beige Mujer</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 149.90</span>
+                    <span class="precio">S/ 104.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://rimage.ripley.cl/home.ripley/Attachment/MKP/1690/MPM10001497396/full_image-2.jpeg" alt="">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Mujer</span>
+                <h3>Sweater Cuello Alto Blanco Invierno</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 139.90</span>
+                    <span class="precio">S/ 97.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">40%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://calvinperu.vtexassets.com/arquivos/ids/370343/47D501G_001_1.jpg.jpg?v=639097120480100000" alt="">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Mujer</span>
+                <h3>Casaca Puffer Negra Essential</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 249.90</span>
+                    <span class="precio">S/ 149.94</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDC9IYT5KU03/500x500/653942630F24F-Jogger-Urbano-Mujer-Slim-Carla.webp">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Mujer</span>
+                <h3>Jogger Térmico Gris Melange</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 109.90</span>
+                    <span class="precio">S/ 76.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 11 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://img01.ztat.net/article/spp-media-p1/d57051777e5b459fb54b907d37436a25/40993f82817c41f296b3a8d1c716f4bc.jpg?imwidth=300" alt="">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Mujer</span>
+                <h3>Hoodie Verde Oliva Relax Fit</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 159.90</span>
+                    <span class="precio">S/ 111.93</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 12 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">40%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://static.wixstatic.com/media/0c587c_628092058fb24eeabb7f214f89e0f92c~mv2.jpg/v1/fill/w_534,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0c587c_628092058fb24eeabb7f214f89e0f92c~mv2.jpg">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">Colección Invierno - Mujer</span>
+                <h3>Sweater Azul Marino Premium</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 129.90</span>
+                    <span class="precio">S/ 77.94</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <div class="selector-tallas"><span class="activa">S</span><span>M</span><span>L</span><span>XL</span></div>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2>AXIS WEAR</h2>
+            <p>Moda urbana para quienes viven su estilo todos los días.</p>
+            <div class="socials">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                 
+                <a href="https://tiktok.com" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                
+                <a href="https://facebook.com" target="_blank">
+                     <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>ENLACES</h3>
+            <a href="#">Inicio</a>
+            <a href="#">Tienda</a>
+            <a href="#">Colección</a>
+            <a href="#">Acerca</a>
+            <a href="#">Contacto</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>AYUDA</h3>
+            <a href="#">Envíos</a>
+            <a href="#">Cambios y devoluciones</a>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>CONTACTO</h3>
+            <p>AxisWear15@gmail.com</p>
+            <p>+51 910 920 563</p>
+            <p>Lima, Perú, Los Olivos</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>SUSCRÍBETE</h3>
+            <p>Recibe nuestras novedades y promociones exclusivas.</p>
+
+            <div class="subscribe">
+                <input type="email" placeholder="Tu email">
+                <button>→</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="main.js"></script>
+
+</body>
+</html>
