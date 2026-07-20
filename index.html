@@ -14,55 +14,44 @@
 
 <!-- HEADER -->
 <header class="header">
-    <!-- LOGO -->
-<a href="index.html" class="logo">AXIS WEAR</a>
-    <!-- MENÚ -->
-<nav class="nav">
+    <a href="index.html" class="logo">AXIS WEAR</a>
 
-    <div class="dropdown"> <!--esto hace que este sea elque contiene-->
-        <a href="#">Tienda</a>
-
-        <div class="dropdown-menu"> <!--Aqui esto es el contenido dentro-->
-            <a href="polos.html">Polos</a>
-            <a href="pantalones.html">Pantalones</a>
-            <a href="zapatillas.html">Zapatillas</a>
+    <nav class="nav">
+        <div class="dropdown">
+            <a href="#">Tienda</a>
+            <div class="dropdown-menu">
+                <a href="polos.html">Polos</a>
+                <a href="pantalones.html">Pantalones</a>
+                <a href="zapatillas.html">Zapatillas</a>
+            </div>
         </div>
-    </div>
 
-    <div class="dropdown">
-        <a href="#">Nuevo</a>
-
-        <div class="dropdown-menu">
-            <a href="#">Últimos productos</a>
-            <a href="#">Tendencias</a>
+        <div class="dropdown">
+            <a href="#">Nuevo</a>
+            <div class="dropdown-menu">
+                <a href="Proceso.html">Últimos productos</a>
+                <a href="Proceso.html">Tendencias</a>
+            </div>
         </div>
-    </div>
 
-    <div class="dropdown">
-        <a href="#">Colección</a>
-
-        <div class="dropdown-menu">
-            <a href="Verano.html">Verano</a>
-            <a href="Invierno.html">Invierno</a>
+        <div class="dropdown">
+            <a href="#">Colección</a>
+            <div class="dropdown-menu">
+                <a href="Verano.html">Verano</a>
+                <a href="Invierno.html">Invierno</a>
+            </div>
         </div>
-    </div>
 
-
-    <div class="dropdown">
-        <a href="#">Acerca</a>
-
-        <div class="dropdown-menu">
-            <a href="nosotros.html">Nosotros</a>
-            <a href="#">Contacto</a>
+        <div class="dropdown">
+            <a href="#">Acerca</a>
+            <div class="dropdown-menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="#">Contacto</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
-</nav>
-
-    <!-- acccion de barrita -->
     <div class="actions">
-
-        <!-- buscar -->
         <div class="search-box">
                 <input type="text" id="inputSearch" placeholder="Buscar...">
                 <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
@@ -74,42 +63,21 @@
                  <li><a href="pantalones.html"><i class="fas fa-search"></i>Pantalones</a></li>
                  <li><a href="zapatillas.html"><i class="fas fa-search"></i>Zapatillas</a></li>
                  <li><a href="nosotros.html"><i class="fas fa-search"></i>Nosotros</a></li>
-                 <li><a href="#"><i class="fas fa-search"></i>Últimos productos</a></li>
-                 <li><a href="#"><i class="fas fa-search"></i>Tendencias</a></li>
+                 <li><a href="Proceso.html"><i class="fas fa-search"></i>Últimos productos</a></li>
+                 <li><a href="Proceso.html"><i class="fas fa-search"></i>Tendencias</a></li>
                  <li><a href="Verano.html"><i class="fas fa-search"></i>Colección Verano</a></li>
                  <li><a href="Invierno.html"><i class="fas fa-search"></i>Colección Invierno</a></li>
             </ul>
 
-        <!-- Y aqui los iconos -->
-        <a href="#"><i class="fa-regular fa-user"></i></a>
-        <a href="#" id="icon-cart">
-    <i class="fa-solid fa-bag-shopping"></i>
-    <span id="contador-carrito">0</span>
-</a>
+             <!-- icono compras -->
+       <a href="#"><i class="fa-regular fa-user"></i></a>
+    <a href="carrito.html" id="cart-icon-btn" style="position: relative;">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span id="cart-count" class="cart-badge"></span>
+    </a>
+
     </div>
 </header>
-
-<div class="cart" id="cart">
-
-    <h2>Mi carrito</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Imagen</th>
-                <th>Producto</th>
-                <th>Precio</th>
-                <th>Cantidad</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody id="cart-items">
-        </tbody>
-    </table>
-    <h3>Total: S/ <span id="cart-total">0.00</span></h3>
-    <button id="vaciar-carrito">
-        Vaciar carrito
-    </button>
-</div>
 
 <!--Imagenes-->
 <section class="hero">
@@ -316,20 +284,19 @@
         <!-- Enlaces -->
         <div class="footer-col">
             <h3>ENLACES</h3>
-            <a href="#">Inicio</a>
-            <a href="#">Tienda</a>
-            <a href="#">Colección</a>
-            <a href="#">Acerca</a>
-            <a href="#">Contacto</a>
+            <a href="index.html">Inicio</a>
+            <a href="">Tienda</a>
+            <a href="Verano.css">Colección</a>
+            <a href="Proceso.html">Acerca</a>
+            <a href="Proceso.html">Contacto</a>
         </div>
 
-        <!-- Aqui es lo de ayuda -->
         <div class="footer-col">
             <h3>AYUDA</h3>
-            <a href="#">Envíos</a>
-            <a href="#">Cambios y devoluciones</a>
-            <a href="#">Preguntas frecuentes</a>
-            <a href="#">Términos y condiciones</a>
+            <a href="Proceso.html">Envíos</a>
+            <a href="Proceso.html">Cambios y devoluciones</a>
+            <a href="Proceso.html">Preguntas frecuentes</a>
+            <a href="Proceso.html">Términos y condiciones</a>
         </div>
 
         <!-- Contacto -->

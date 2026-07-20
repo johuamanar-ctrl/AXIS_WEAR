@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras - AXIS WEAR</title>
+    <!-- Vinculación de tus estilos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrito.css"> <!-- Aquí enlazamos tu nuevo diseño -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER (Tu barra original intacta) -->
+<header class="header">
+    <a href="index.html" class="logo">AXIS WEAR</a>
+
+    <nav class="nav">
+        <div class="dropdown">
+            <a href="#">Tienda</a>
+            <div class="dropdown-menu">
+                <a href="polos.html">Polos</a>
+                <a href="pantalones.html">Pantalones</a>
+                <a href="zapatillas.html">Zapatillas</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Nuevo</a>
+            <div class="dropdown-menu">
+                <a href="Proceso.html">Últimos productos</a>
+                <a href="Proceso.html">Tendencias</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Colección</a>
+            <div class="dropdown-menu">
+                <a href="Verano.html">Verano</a>
+                <a href="Invierno.html">Invierno</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="Proceso.css">Acerca</a>
+            <div class="dropdown-menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="Proceso.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="actions">
+        <div class="search-box">
+            <input type="text" id="inputSearch" placeholder="Buscar...">
+            <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+        </div>
+        
+        <ul id="box-search">
+             <li><a href="index.html"><i class="fas fa-search"></i>Inicio</a></li>
+             <li><a href="polos.html"><i class="fas fa-search"></i>Polos</a></li>
+             <li><a href="pantalones.html"><i class="fas fa-search"></i>Pantalones</a></li>
+             <li><a href="zapatillas.html"><i class="fas fa-search"></i>Zapatillas</a></li>
+             <li><a href="nosotros.html"><i class="fas fa-search"></i>Nosotros</a></li>
+             <li><a href="#"><i class="fas fa-search"></i>Últimos productos</a></li>
+             <li><a href="#"><i class="fas fa-search"></i>Tendencias</a></li>
+             <li><a href="#"><i class="fas fa-search"></i>Colección Verano</a></li>
+             <li><a href="#"><i class="fas fa-search"></i>Colección Invierno</a></li>
+        </ul>
+
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="carrito.html" id="cart-icon-btn" style="position: relative;">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span id="cart-count" class="cart-badge"></span>
+        </a>
+    </div>
+</header>
+
+<!-- SECCIÓN PRINCIPAL (Limpia y lista para el diseño) -->
+<main class="cart-page-container">
+    <h2>Tu Carrito de Compras</h2>
+    
+    <div class="cart-page-layout">
+        
+        <!-- Lista de productos cargados (Izquierda) -->
+        <div class="cart-page-items" id="cart-page-items-container">
+            <p>Cargando tus productos...</p>
+        </div>
+
+        <!-- Resumen de compra (Derecha) -->
+        <div class="cart-page-summary">
+            <h3>Resumen de Pedido</h3>
+            
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>S/ <span id="cart-page-subtotal">0.00</span></span>
+            </div>
+            <div class="summary-row shipping">
+                <span>Envío</span>
+                <span>Gratis</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total</span>
+                <span>S/ <span id="cart-page-total">0.00</span></span>
+            </div>
+
+            <button id="cart-page-checkout-btn">Proceder al Pago</button>
+            <button id="cart-page-clear-btn">Vaciar Carrito</button>
+        </div>
+
+    </div>
+</main>
+
+<!-- FOOTER (Con burbujas incluidas) -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2>AXIS WEAR</h2>
+            <p>Moda urbana para quienes viven su estilo todos los días.</p>
+            <div class="socials">
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>ENLACES</h3>
+            <a href="index.html">Inicio</a>
+            <a href="#">Tienda</a>
+            <a href="#">Colección</a>
+            <a href="#">Acerca</a>
+            <a href="#">Contacto</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>AYUDA</h3>
+            <a href="#">Envíos</a>
+            <a href="#">Cambios y devoluciones</a>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>CONTACTO</h3>
+            <p>AxisWear15@gmail.com</p>
+            <p>+51 910 920 563</p>
+            <p>Lima, Perú, Los Olivos</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>SUSCRÍBETE</h3>
+            <p>Recibe nuestras novedades y promociones exclusivas.</p>
+            <div class="subscribe">
+                <input type="email" placeholder="Tu email">
+                <button>→</button>
+            </div>
+        </div>
+
+        <!-- Burbujas decorativas animadas -->
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- VENTANA MODAL DE PAGO -->
+<div id="payment-modal" class="modal-checkout" style="display: none;">
+    <div class="modal-checkout-content">
+        <button id="close-payment-modal" class="modal-close-btn">&times;</button>
+        <h3>Finalizar Pago</h3>
+        
+        <form id="payment-form">
+            <!-- Métodos de Pago -->
+            <div class="payment-methods">
+                <label>
+                    <input type="radio" name="method" value="card" checked> Tarjeta de Crédito / Visa
+                </label>
+                <label>
+                    <input type="radio" name="method" value="yape"> Yape
+                </label>
+                <label>
+                    <input type="radio" name="method" value="plin"> Plin
+                </label>
+            </div>
+
+            <!-- Campos dinámicos -->
+            <div id="card-fields" class="method-fields">
+                <input type="text" placeholder="Número de tarjeta" maxlength="16" required>
+                <div class="form-row">
+                    <input type="text" placeholder="MM/AA" maxlength="5" required>
+                    <input type="password" placeholder="CVV" maxlength="3" required>
+                </div>
+            </div>
+
+            <div id="qr-fields" class="method-fields" style="display: none;">
+    <p style="text-align: center; margin-bottom: 10px;">Escanea el código QR desde tu app para pagar:</p>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="qr.jpeg" alt="QR de Pago Yape Plin" style="width: 180px; height: 180px; object-fit: contain; border: 1px solid #ddd; padding: 5px;">
+    </div>
+    <input type="text" placeholder="Número de celular registrado" maxlength="9">
+</div>
+
+            <button type="submit" class="btn-submit-payment">Confirmar Pago</button>
+        </form>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
