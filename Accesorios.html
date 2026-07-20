@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Polos - AXIS WEAR</title>
+    <!-- Vinculación de tus estilos globales y específicos de polos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Verano.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Regla para que los títulos seccionen correctamente el CSS Grid */
+        .subtitulo-seccion {
+            grid-column: 1 / -1;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #333;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🔝 HEADER (Mantiene tu barra original intacta) -->
+<header class="header">
+    <a href="index.html" class="logo">AXIS WEAR</a>
+
+    <nav class="nav">
+        <div class="dropdown">
+            <a href="#">Tienda</a>
+            <div class="dropdown-menu">
+                <a href="polos.html">Polos</a>
+                <a href="pantalones.html">Pantalones</a>
+                <a href="zapatillas.html">Zapatillas</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Nuevo</a>
+            <div class="dropdown-menu">
+                <a href="Proceso.html">Últimos productos</a>
+                <a href="Proceso.html">Tendencias</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Colección</a>
+            <div class="dropdown-menu">
+                <a href="Verano.html">Verano</a>
+                <a href="Invierno.html">Invierno</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Acerca</a>
+            <div class="dropdown-menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="Contactos.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="actions">
+        <div class="search-box">
+                <input type="text" id="inputSearch" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+            </div>
+        
+            <ul id="box-search">
+                 <li><a href="index.html"><i class="fas fa-search"></i>Inicio</a></li>
+                 <li><a href="polos.html"><i class="fas fa-search"></i>Polos</a></li>
+                 <li><a href="pantalones.html"><i class="fas fa-search"></i>Pantalones</a></li>
+                 <li><a href="zapatillas.html"><i class="fas fa-search"></i>Zapatillas</a></li>
+                 <li><a href="nosotros.html"><i class="fas fa-search"></i>Nosotros</a></li>
+                 <li><a href="Proceso.html"><i class="fas fa-search"></i>Últimos productos</a></li>
+                 <li><a href="Proceso.html"><i class="fas fa-search"></i>Tendencias</a></li>
+                 <li><a href="Verano.html"><i class="fas fa-search"></i>Colección Verano</a></li>
+                 <li><a href="Invierno.html"><i class="fas fa-search"></i>Colección Invierno</a></li>
+                 <li><a href="Accesorios.html"><i class="fas fa-search"></i>Accesorios</a></li>
+            </ul>
+
+             <!-- icono compras -->
+       <a href="#"><i class="fa-regular fa-user"></i></a>
+    <a href="carrito.html" id="cart-icon-btn" style="position: relative;">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span id="cart-count" class="cart-badge"></span>
+    </a>
+
+    </div>
+</header>
+
+<main class="catalog-container">
+    <div class="grid-productos-catalogo">
+        
+        <h2 class="subtitulo-seccion">Accesorios Urbanos</h2>
+
+        <!-- Producto 1 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">25%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtFkOh-135yzsPF9uJ2KqFJyDHac-yUbCy9oo0wADAnqD8K-AH-NRBVjKg&s=10" alt=" Raglán">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR Accesorios</span>
+                <h3>Gorra Minimal Classic Negra</h3>
+                <span class="precio-antes">S/ 79.90</span>
+                <span class="precio">S/ 59.90</span>>
+            </div>
+             <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <span class="activa">Unica</span>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">20%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM-CCrYmOpk3qrMs6YKgzdQlDIdBep6agnhBctbGKbJEyMHCwoy6ALeA8c&s=10" alt=" Raglán">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR Accesorios</span>
+                <h3>Canguro Street Black</h3>
+                <span class="precio-antes">99.90</span>
+                <span class="precio">S/ 79.99</span>>
+            </div>
+             <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <span class="activa">Unica</span>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+        
+        <!-- Producto 3 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_845182-MPE81019098759_112024-O.webp" alt="">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR Accesorios</span>
+                <h3>Gorro Beanie Invierno Gris</h3>
+                <div class="precio-contenedor">
+                    <span class="precio">S/ 49.90</span>
+                </div>
+            </div>
+             <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <span class="activa">Unica</span>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">15%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cEtTN55SBYsJ8xs-SXKpsGFicvOpytcb5nSeP1SBhg&s" alt="">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR Accesorios</span>
+                <h3>Cinturón Casual Leather</h3>
+                <div class="precio-contenedor">
+                    <span class="precio-antes">S/ 69.90</span>
+                    <span class="precio">S/ 59.90</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <span class="activa">Unica</span>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="prod-card-col">
+            <div class="img-wrapper">
+                <span class="badge-descuento">30%</span>
+                <i class="fa-regular fa-heart icon-corazon"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-lo88i0KsRJ22YqfPEufPnz2Qc8al0m-_WtgMTaN3rA&s" alt="">
+            </div>
+            <div class="prod-info-detalle">
+                <span class="cat-tag">AXIS WEAR Accesorios</span>
+                <h3>Bolso Crossbody Urban</h3>
+                <div class="precio-contenedor">
+                    <span class="precio">S/ 119.90</span>
+                </div>
+            </div>
+            <div class="detalles-fijos">
+                <div class="tallas-contenedor">
+                    <span class="txt-talla">Talla</span>
+                    <span class="activa">Unica</span>
+                </div>
+                <button class="btn-agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2>AXIS WEAR</h2>
+            <p>Moda urbana para quienes viven su estilo todos los días.</p>
+            <div class="socials">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                 
+                <a href="https://tiktok.com" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                
+                <a href="https://facebook.com" target="_blank">
+                     <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>ENLACES</h3>
+            <a href="index.html">Inicio</a>
+            <a href="">Tienda</a>
+            <a href="Proceso.html">Colección</a>
+            <a href="Proceso.html">Nosotros</a>
+            <a href="Contactos.html">Contacto</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>AYUDA</h3>
+            <a href="Proceso.html">Envíos</a>
+            <a href="Contactos.html">Cambios y devoluciones</a>
+            <a href="Proceso.html">Preguntas frecuentes</a>
+            <a href="Proceso.html">Términos y condiciones</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>CONTACTO</h3>
+            <p>AxisWear15@gmail.com</p>
+            <p>+51 910 920 563</p>
+            <p>Lima, Perú, Los Olivos</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>SUSCRÍBETE</h3>
+            <p>Recibe nuestras novedades y promociones exclusivas.</p>
+
+            <div class="subscribe">
+                <input type="email" placeholder="Tu email">
+                <button>→</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="main.js"></script>
+
+</body>
+</html>
