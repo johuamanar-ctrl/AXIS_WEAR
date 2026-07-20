@@ -15,7 +15,7 @@
 <!-- HEADER -->
 <header class="header">
     <!-- LOGO -->
-    <a href="index.html" class="logo">AXIS WEAR</a>
+<a href="index.html" class="logo">AXIS WEAR</a>
     <!-- MENÚ -->
 <nav class="nav">
 
@@ -42,7 +42,7 @@
         <a href="#">Colección</a>
 
         <div class="dropdown-menu">
-            <a href="">Verano</a>
+            <a href="Verano.html">Verano</a>
             <a href="Invierno.html">Invierno</a>
         </div>
     </div>
@@ -76,15 +76,40 @@
                  <li><a href="nosotros.html"><i class="fas fa-search"></i>Nosotros</a></li>
                  <li><a href="#"><i class="fas fa-search"></i>Últimos productos</a></li>
                  <li><a href="#"><i class="fas fa-search"></i>Tendencias</a></li>
-                 <li><a href="#"><i class="fas fa-search"></i>Colección Verano</a></li>
-                 <li><a href="#"><i class="fas fa-search"></i>Colección Invierno</a></li>
+                 <li><a href="Verano.html"><i class="fas fa-search"></i>Colección Verano</a></li>
+                 <li><a href="Invierno.html"><i class="fas fa-search"></i>Colección Invierno</a></li>
             </ul>
 
         <!-- Y aqui los iconos -->
         <a href="#"><i class="fa-regular fa-user"></i></a>
-        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="#" id="icon-cart">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span id="contador-carrito">0</span>
+</a>
     </div>
 </header>
+
+<div class="cart" id="cart">
+
+    <h2>Mi carrito</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+        </tbody>
+    </table>
+    <h3>Total: S/ <span id="cart-total">0.00</span></h3>
+    <button id="vaciar-carrito">
+        Vaciar carrito
+    </button>
+</div>
 
 <!--Imagenes-->
 <section class="hero">
@@ -291,7 +316,7 @@
         <!-- Enlaces -->
         <div class="footer-col">
             <h3>ENLACES</h3>
-            <a href="index.html">Inicio</a>
+            <a href="#">Inicio</a>
             <a href="#">Tienda</a>
             <a href="#">Colección</a>
             <a href="#">Acerca</a>
