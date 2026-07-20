@@ -2,20 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>AXIS WEAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes | AXIS WEAR</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Contactos.css">
+    <link rel="stylesheet" href="preguntas.css">
     <link rel="stylesheet" href="nosotros.css">
     <link rel="stylesheet" href="main.js">
+    
 
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Estilo para los títulos de sección que rompen el grid correctamente */
+        .subtitulo-seccion {
+            grid-column: 1 / -1;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #333;
+            color: #111;
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- HEADER -->
 <header class="header">
     <a href="index.html" class="logo">AXIS WEAR</a>
 
@@ -83,124 +97,111 @@
 
     </div>
 </header>
-
 <!-- HERO -->
 
 <section class="about-hero">
     <div class="about-overlay">
         <h1 class="hero-title">
-            Contáctanos
+            Preguntas Frecuentes
         </h1>
-        <p>Estamos aquí para ayudarte. Escríbenos si tienes alguna consulta
-            sobre nuestros productos, pedidos o colecciones.</p>
+        <p>Encuentra respuestas a las dudas más comunes sobre nuestros
+            productos, envíos, pagos y devoluciones.</p>
     </div>
 </section>
 
-<!-- CONTENIDO -->
+<!-- FAQ -->
 
-<section class="contact-container">
+<section class="faq-container">
 
-    <!-- Información -->
+    <div class="faq-item">
+        <button class="faq-question">
+            ¿Cómo puedo realizar una compra?
+            <i class="fa-solid fa-plus"></i>
+        </button>
 
-    <div class="contact-info">
-
-        <h2>Información</h2>
-
-        <div class="info-item">
-
-            <i class="fa-solid fa-location-dot"></i>
-
-            <div>
-
-                <h3>Dirección</h3>
-
-                <p>Los Olivos, Lima - Perú</p>
-
-            </div>
-
+        <div class="faq-answer">
+            <p>
+                Selecciona el producto que deseas, elige la talla,
+                agrégalo al carrito y sigue el proceso de compra.
+            </p>
         </div>
-
-        <div class="info-item">
-
-            <i class="fa-solid fa-phone"></i>
-
-            <div>
-
-                <h3>Teléfono</h3>
-
-                <p>+51 910 920 563</p>
-
-            </div>
-
-        </div>
-
-        <div class="info-item">
-
-            <i class="fa-solid fa-envelope"></i>
-
-            <div>
-
-                <h3>Correo</h3>
-
-                <p>AxisWear15@gmail.com</p>
-
-            </div>
-
-        </div>
-
-        <div class="info-item">
-
-            <i class="fa-solid fa-clock"></i>
-
-            <div>
-
-                <h3>Horario</h3>
-
-                <p>Lunes a Sábado<br>9:00 AM - 8:00 PM</p>
-
-            </div>
-
-        </div>
-
     </div>
 
+    <div class="faq-item">
+        <button class="faq-question">
+            ¿Qué métodos de pago aceptan?
+            <i class="fa-solid fa-plus"></i>
+        </button>
 
-    <!-- Formulario -->
+        <div class="faq-answer">
+            <p>
+                Aceptamos tarjetas de crédito, débito, transferencias
+                bancarias y otros métodos de pago disponibles.
+            </p>
+        </div>
+    </div>
 
-    <div class="contact-form">
+    <div class="faq-item">
+        <button class="faq-question">
+            ¿Cuánto demora el envío?
+            <i class="fa-solid fa-plus"></i>
+        </button>
 
-        <h2>Envíanos un mensaje</h2>
+        <div class="faq-answer">
+            <p>
+                Los envíos nacionales suelen tardar entre 2 y 5 días
+                hábiles dependiendo de la ubicación.
+            </p>
+        </div>
+    </div>
 
-        <form>
+    <div class="faq-item">
+        <button class="faq-question">
+            ¿Puedo cambiar o devolver un producto?
+            <i class="fa-solid fa-plus"></i>
+        </button>
 
-            <input type="text" placeholder="Nombre completo">
+        <div class="faq-answer">
+            <p>
+                Sí. Puedes solicitar un cambio o devolución dentro de
+                los 7 días posteriores a la compra, siempre que el
+                producto conserve sus etiquetas y esté en perfecto estado.
+            </p>
+        </div>
+    </div>
 
-            <input type="email" placeholder="Correo electrónico">
+    <div class="faq-item">
+        <button class="faq-question">
+            ¿Cómo elijo mi talla?
+            <i class="fa-solid fa-plus"></i>
+        </button>
 
-            <input type="text" placeholder="Asunto">
+        <div class="faq-answer">
+            <p>
+                Cada producto cuenta con una guía de tallas para ayudarte
+                a elegir la medida adecuada.
+            </p>
+        </div>
+    </div>
 
-            <textarea rows="6" placeholder="Escribe tu mensaje"></textarea>
+    <div class="faq-item">
+        <button class="faq-question">
+            ¿Cómo puedo contactar con AXIS WEAR?
+            <i class="fa-solid fa-plus"></i>
+        </button>
 
-            <button type="submit">Enviar Mensaje</button>
-
-        </form>
-
+        <div class="faq-answer">
+            <p>
+                Puedes escribirnos al correo
+                <strong>AxisWear15@gmail.com</strong> o comunicarte al
+                +51 910 920 563.
+            </p>
+        </div>
     </div>
 
 </section>
 
 
-<!-- MAPA -->
-
-<section class="map">
-
-<iframe
-src="https://www.google.com/maps?q=Los+Olivos+Lima+Peru&output=embed"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-</section>
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-col">

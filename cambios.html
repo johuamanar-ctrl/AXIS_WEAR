@@ -2,20 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>AXIS WEAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes | AXIS WEAR</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Contactos.css">
+    <link rel="stylesheet" href="cambios.css">
     <link rel="stylesheet" href="nosotros.css">
     <link rel="stylesheet" href="main.js">
+    
 
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Estilo para los títulos de sección que rompen el grid correctamente */
+        .subtitulo-seccion {
+            grid-column: 1 / -1;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #333;
+            color: #111;
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- HEADER -->
 <header class="header">
     <a href="index.html" class="logo">AXIS WEAR</a>
 
@@ -85,122 +99,102 @@
 </header>
 
 <!-- HERO -->
-
 <section class="about-hero">
     <div class="about-overlay">
         <h1 class="hero-title">
-            Contáctanos
+            Cambios y Devoluciones
         </h1>
-        <p>Estamos aquí para ayudarte. Escríbenos si tienes alguna consulta
-            sobre nuestros productos, pedidos o colecciones.</p>
+        <p>En AXIS WEAR queremos que estés completamente satisfecho con tu compra.
+            Consulta nuestras políticas para realizar cambios o devoluciones de forma rápida y sencilla.</p>
     </div>
 </section>
 
 <!-- CONTENIDO -->
 
-<section class="contact-container">
+<section class="returns-content">
 
-    <!-- Información -->
+    <div class="returns-card">
 
-    <div class="contact-info">
+        <i class="fa-solid fa-calendar-check"></i>
 
-        <h2>Información</h2>
+        <h2>Plazo para cambios</h2>
 
-        <div class="info-item">
-
-            <i class="fa-solid fa-location-dot"></i>
-
-            <div>
-
-                <h3>Dirección</h3>
-
-                <p>Los Olivos, Lima - Perú</p>
-
-            </div>
-
-        </div>
-
-        <div class="info-item">
-
-            <i class="fa-solid fa-phone"></i>
-
-            <div>
-
-                <h3>Teléfono</h3>
-
-                <p>+51 910 920 563</p>
-
-            </div>
-
-        </div>
-
-        <div class="info-item">
-
-            <i class="fa-solid fa-envelope"></i>
-
-            <div>
-
-                <h3>Correo</h3>
-
-                <p>AxisWear15@gmail.com</p>
-
-            </div>
-
-        </div>
-
-        <div class="info-item">
-
-            <i class="fa-solid fa-clock"></i>
-
-            <div>
-
-                <h3>Horario</h3>
-
-                <p>Lunes a Sábado<br>9:00 AM - 8:00 PM</p>
-
-            </div>
-
-        </div>
+        <p>
+            Puedes solicitar el cambio de un producto dentro de los
+            <strong>7 días calendario</strong> posteriores a la recepción del pedido.
+        </p>
 
     </div>
 
+    <div class="returns-card">
 
-    <!-- Formulario -->
+        <i class="fa-solid fa-box-open"></i>
 
-    <div class="contact-form">
+        <h2>Condiciones del producto</h2>
 
-        <h2>Envíanos un mensaje</h2>
+        <p>
+            El producto debe estar sin uso, limpio, con sus etiquetas
+            originales y en su empaque correspondiente.
+        </p>
 
-        <form>
+    </div>
 
-            <input type="text" placeholder="Nombre completo">
+    <div class="returns-card">
 
-            <input type="email" placeholder="Correo electrónico">
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
 
-            <input type="text" placeholder="Asunto">
+        <h2>Proceso de cambio</h2>
 
-            <textarea rows="6" placeholder="Escribe tu mensaje"></textarea>
+        <p>
+            Contáctanos por correo o teléfono indicando tu número de pedido.
+            Nuestro equipo te brindará las instrucciones para completar el cambio.
+        </p>
 
-            <button type="submit">Enviar Mensaje</button>
+    </div>
 
-        </form>
+    <div class="returns-card">
+
+        <i class="fa-solid fa-money-bill-wave"></i>
+
+        <h2>Devoluciones</h2>
+
+        <p>
+            Si el producto presenta un defecto de fabricación o recibiste un artículo incorrecto,
+            podrás solicitar el reembolso o el cambio correspondiente.
+        </p>
+
+    </div>
+
+    <div class="returns-card">
+
+        <i class="fa-solid fa-truck-fast"></i>
+
+        <h2>Costos de envío</h2>
+
+        <p>
+            Cuando el cambio sea por un error de AXIS WEAR,
+            los costos de envío serán asumidos por la empresa.
+        </p>
+
+    </div>
+
+    <div class="returns-card">
+
+        <i class="fa-solid fa-headset"></i>
+
+        <h2>Atención al cliente</h2>
+
+        <p>
+            Si necesitas ayuda durante el proceso,
+            puedes comunicarte con nuestro equipo de soporte mediante
+            nuestro correo electrónico o número de contacto.
+        </p>
 
     </div>
 
 </section>
 
 
-<!-- MAPA -->
-
-<section class="map">
-
-<iframe
-src="https://www.google.com/maps?q=Los+Olivos+Lima+Peru&output=embed"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-</section>
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-col">
@@ -233,7 +227,7 @@ loading="lazy">
         <div class="footer-col">
             <h3>AYUDA</h3>
             <a href="carrito.html">Envíos</a>
-            <a href="cambios.html">Cambios y devoluciones</a>
+            <a href="cambios.css">Cambios y devoluciones</a>
             <a href="preguntas.html">Preguntas frecuentes</a>
             <a href="terminos.html">Términos y condiciones</a>
         </div>
