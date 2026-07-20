@@ -2,15 +2,33 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Nosotros | AXIS WEAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envíos | AXIS WEAR</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="envios.css">
     <link rel="stylesheet" href="nosotros.css">
+    <link rel="stylesheet" href="main.js">
+
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Estilo para los títulos de sección que rompen el grid correctamente */
+        .subtitulo-seccion {
+            grid-column: 1 / -1;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #333;
+            color: #111;
+        }
+    </style>
 </head>
-
 <body>
-<!-- 🔝 HEADER -->
+
 <header class="header">
     <a href="index.html" class="logo">AXIS WEAR</a>
 
@@ -79,41 +97,77 @@
     </div>
 </header>
 
+<!-- HERO -->
 <section class="about-hero">
     <div class="about-overlay">
-        <h1 class="hero-title">
-            SOBRE AXIS WEAR
-        </h1>
-        <p>Moda urbana creada para quienes expresan
-            su identidad a través del estilo.</p>
+        <h1 class="hero-title">Envíos</h1>
+        <p>Conoce nuestras opciones de envío, tiempos de entrega y
+            cobertura para recibir tus productos AXIS WEAR de forma segura.</p>
     </div>
 </section>
 
-<section class="about-content-page">
-    <div class="about-text">
-        <h2>NUESTRA HISTORIA</h2>
-        <p>AXIS WEAR nace de la inspiración de la cultura streetwear y la moda contemporánea.
-            Nuestro objetivo es ofrecer prendas que combinen comodidad, calidad y un diseño
-            minimalista para quienes buscan expresar su estilo en el día a día.</p>
+<!-- CONTENIDO -->
+
+<section class="shipping-content">
+    <div class="shipping-card">
+        <i class="fa-solid fa-box"></i>
+        <h2>Preparación del pedido</h2>
+        <p>Una vez confirmada tu compra, nuestro equipo prepara tu pedido
+            cuidadosamente antes de ser enviado.</p>
+
     </div>
 
-    <section class="mission">
-    <div class="card">
-        <i class="fa-solid fa-bullseye"></i>
-        <h3>MISIÓN</h3>
-        <p>Diseñar prendas urbanas funcionales que permitan a cada persona
-            expresar su identidad con comodidad y autenticidad.</p>
+    <div class="shipping-card">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h2>Tiempo de entrega</h2>
+        <p>Los envíos nacionales tienen un tiempo estimado de
+            <strong>2 a 5 días hábiles</strong>, dependiendo de la ciudad
+            y la disponibilidad del servicio de transporte.</p>
+
     </div>
 
-    <div class="card">
-        <i class="fa-solid fa-eye"></i>
-        <h3>VISIÓN</h3>
-        <p>Convertirnos en una marca referente de moda urbana en el mercado
-            peruano, destacando por nuestro diseño y calidad.</p>
+    <div class="shipping-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <h2>Cobertura</h2>
+        <p>Realizamos envíos a las principales ciudades del Perú.
+            Algunas zonas alejadas pueden requerir un tiempo adicional.</p>
     </div>
+
+    <div class="shipping-card">
+        <i class="fa-solid fa-money-bill-wave"></i>
+        <h2>Costo de envío</h2>
+        <p>El costo del envío se calcula automáticamente durante el proceso
+            de compra según la dirección registrada por el cliente.</p>
+    </div>
+
+    <div class="shipping-card">
+
+        <i class="fa-solid fa-map-location-dot"></i>
+
+        <h2>Seguimiento del pedido</h2>
+
+        <p>
+            Una vez despachado tu pedido, recibirás un código de seguimiento
+            para consultar el estado de la entrega.
+        </p>
+
+    </div>
+
+    <div class="shipping-card">
+
+        <i class="fa-solid fa-headset"></i>
+
+        <h2>Soporte</h2>
+
+        <p>
+            Si tienes alguna consulta sobre tu envío, puedes comunicarte
+            con nuestro equipo de atención al cliente para recibir asistencia.
+        </p>
+
+    </div>
+
 </section>
 
-</section>
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-col">
@@ -170,11 +224,9 @@
     </div>
 </footer>
 
-
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://unpkg.com/split-type"></script>
 
-<!-- Aniamcion ouyeahhh -->
 <script>
 const text = new SplitType('.hero-title', {
     types: "words, chars"
