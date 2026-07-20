@@ -942,3 +942,17 @@
 .cart-badge:empty {
   display: none;
 }
+
+.btn-explorar{
+    display:inline-block;
+    padding:12px 30px;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.btn-explorar:hover{
+    background:#333;
+}
